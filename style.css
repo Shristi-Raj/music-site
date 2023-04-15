@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik&family=Ubuntu&display=swap');
+body{
+    background-color: antiquewhite;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    cursor: pointer;
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height:65px;
+    background-color: black;
+    color: white;
+    
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width:60px;
+    
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+
+.container{
+    min-height: 72vh;
+    background-color: black;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    width:70%;
+    margin:23px auto;
+    border-radius: 12px;
+    padding: 30px;
+    background-image:-webkit-image-set(url('musicbg.jpg') 6.2x);
+}
+
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icons{
+    margin-top: 14px;
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw;
+    cursor: pointer;
+}
+
+
+
+.songItem {
+    
+    display: flex;
+    background-color: white;
+    width: 84%;
+    color: black;
+    margin: 12px 0;
+    border-radius: 34px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.songItem img{
+    width: 74px;
+    margin:0 12px 0;
+    border-radius: 20px;
+    
+}
+
+
+.timestamp{
+    margin: 0 23px;
+    
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songinfo{
+    position: absolute;
+    margin-top: 45px;
+    left:10vw;
+    font-family: 'Rubik', sans-serif;
+}
+
+.songinfo img{
+    opacity: 0;
+    transition: opacity 1s ease-in;
+}
